@@ -1,0 +1,10 @@
+PODS:
+  - GoogleConversionTracking (2.1.0)
+
+DEPENDENCIES:
+  - GoogleConversionTracking (~> 2.1.0)
+
+SPEC CHECKSUMS:
+  GoogleConversionTracking: f9b30b7a5015d67ac7376c9eb601c5a8449873cd
+
+COCOAPODS: 0.35.0
