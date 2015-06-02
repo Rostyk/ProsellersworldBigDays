@@ -740,12 +740,12 @@
 		8BEDC4D2170C5747000FF311 /* icon_year.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BEDC4CA170C5747000FF311 /* icon_year.png */; };
 		8BEDC4D8170C739D000FF311 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEDC4D7170C739C000FF311 /* StoreKit.framework */; };
 		8BEDC4DB170C7570000FF311 /* InAppPurchaseObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC4DA170C7570000FF311 /* InAppPurchaseObserver.m */; };
+		91CFFE961B1E1E3B0046D075 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CFFE951B1E1E3A0046D075 /* Icon-29.png */; };
 		92DB6FDE17F95294000F6CA7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DB6FDD17F95294000F6CA7 /* BaseViewController.m */; };
 		92DB6FE217F9E174000F6CA7 /* BigDayPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DB6FE117F9E174000F6CA7 /* BigDayPageViewController.xib */; };
 		DAAF6B8E170EB626009AD4E9 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAF6B8D170EB626009AD4E9 /* ActivityIndicator.m */; };
 		DAAF6B97170EC607009AD4E9 /* PurchaseImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAF6B95170EC607009AD4E9 /* PurchaseImageViewController.m */; };
 		DAAF6B98170EC607009AD4E9 /* PurchaseImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAAF6B96170EC607009AD4E9 /* PurchaseImageViewController.xib */; };
-		DAE9D29517EF323B0087D3A0 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE9D29217EF323B0087D3A0 /* Icon-29.png */; };
 		DAE9D29617EF323B0087D3A0 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE9D29317EF323B0087D3A0 /* Icon-58.png */; };
 		DAE9D29717EF323B0087D3A0 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE9D29417EF323B0087D3A0 /* Icon-80.png */; };
 /* End PBXBuildFile section */
@@ -1552,6 +1552,7 @@
 		8BEDC4D7170C739C000FF311 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8BEDC4D9170C7570000FF311 /* InAppPurchaseObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseObserver.h; sourceTree = "<group>"; };
 		8BEDC4DA170C7570000FF311 /* InAppPurchaseObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseObserver.m; sourceTree = "<group>"; };
+		91CFFE951B1E1E3A0046D075 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		92DB6FDC17F95294000F6CA7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		92DB6FDD17F95294000F6CA7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		92DB6FE117F9E174000F6CA7 /* BigDayPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigDayPageViewController.xib; sourceTree = "<group>"; };
@@ -1561,7 +1562,6 @@
 		DAAF6B94170EC607009AD4E9 /* PurchaseImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseImageViewController.h; sourceTree = "<group>"; };
 		DAAF6B95170EC607009AD4E9 /* PurchaseImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseImageViewController.m; sourceTree = "<group>"; };
 		DAAF6B96170EC607009AD4E9 /* PurchaseImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseImageViewController.xib; sourceTree = "<group>"; };
-		DAE9D29217EF323B0087D3A0 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		DAE9D29317EF323B0087D3A0 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
 		DAE9D29417EF323B0087D3A0 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1674,7 +1674,7 @@
 		40C7116A164168E3006714F1 = {
 			isa = PBXGroup;
 			children = (
-				DAE9D29217EF323B0087D3A0 /* Icon-29.png */,
+				91CFFE951B1E1E3A0046D075 /* Icon-29.png */,
 				DAE9D29317EF323B0087D3A0 /* Icon-58.png */,
 				DAE9D29417EF323B0087D3A0 /* Icon-80.png */,
 				8B5BA9C017E21E8600EF5EEC /* Icon-76.png */,
@@ -2805,6 +2805,7 @@
 				405C5B6F1652C2FA0058DD83 /* ImageSelectViewController.xib in Resources */,
 				405C5B7516541C230058DD83 /* defaultimages_table_bg.png in Resources */,
 				405C5B7616541C230058DD83 /* image_label.png in Resources */,
+				91CFFE961B1E1E3B0046D075 /* Icon-29.png in Resources */,
 				405C5B831654E6540058DD83 /* DefaultImageViewController.xib in Resources */,
 				405C5B941654EB610058DD83 /* default0.jpg in Resources */,
 				405C5B951654EB610058DD83 /* default1.jpg in Resources */,
@@ -3032,7 +3033,6 @@
 				8B508C62171F914C006241A0 /* Parties iPhone5-Thumb-06.png in Resources */,
 				8B508C63171F914C006241A0 /* Parties iPhone5-Thumb-07.png in Resources */,
 				8B508C64171F914C006241A0 /* Parties iPhone5-Thumb-08.png in Resources */,
-				DAE9D29517EF323B0087D3A0 /* Icon-29.png in Resources */,
 				8B508C65171F914C006241A0 /* Parties iPhone5-Thumb-09.png in Resources */,
 				8B508C66171F914C006241A0 /* Parties iPhone5-Thumb-10.png in Resources */,
 				8B508C67171F914C006241A0 /* Parties iPhone5-Thumb-11.png in Resources */,
