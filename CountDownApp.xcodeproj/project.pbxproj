@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1680,8 +1680,6 @@
 				8B5BA9C017E21E8600EF5EEC /* Icon-76.png */,
 				8B5BA9C117E21E8600EF5EEC /* Icon-120.png */,
 				8B5BA9C217E21E8600EF5EEC /* Icon-152.png */,
-				8BDAD27B17DEAF60007729B9 /* Security.framework */,
-				8BEDC4D7170C739C000FF311 /* StoreKit.framework */,
 				40B56D4E165E2400000A1415 /* Icon@2x.png */,
 				40B56D4C165E23E0000A1415 /* Icon.png */,
 				40C7117F164168E3006714F1 /* CountDownApp */,
@@ -1703,6 +1701,8 @@
 		40C71178164168E3006714F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BDAD27B17DEAF60007729B9 /* Security.framework */,
+				8BEDC4D7170C739C000FF311 /* StoreKit.framework */,
 				09373556188AEB1600424F46 /* AdSupport.framework */,
 				40EA922B1668AACD00F8EBB2 /* SystemConfiguration.framework */,
 				40EA92291668A9D900F8EBB2 /* Twitter.framework */,
@@ -2718,7 +2718,7 @@
 				};
 			};
 			buildConfigurationList = 40C7116F164168E3006714F1 /* Build configuration list for PBXProject "CountDownApp" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
