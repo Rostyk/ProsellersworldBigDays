@@ -10,9 +10,10 @@
 #import "../JDFlipNumberView/JDDateCountdownFlipView.h"
 #import <MessageUI/MFMailComposeViewController.h>
 #import <MessageUI/MFMessageComposeViewController.h>
-#import "FacebookManager.h"
 
-@interface BigDaysDetailsViewController : BaseViewController <UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, FacebookManagerDelegate>
+typedef void (^SimpleBlock)();
+
+@interface BigDaysDetailsViewController : BaseViewController <UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 {
     int nDayIndex;
     int nScrollIndex;
@@ -63,6 +64,8 @@
 - (IBAction)onEditInfo:(id)sender;
 - (IBAction)onShare:(id)sender;
 - (IBAction)onCancelShare:(id)sender;
+- (void)onCancelShare:(id)sender
+      completionBlock:(SimpleBlock)completion;
 - (IBAction)onInfo:(id)sender;
 - (IBAction)onCancelInfo:(id)sender;
 - (IBAction)onSaveImage:(id)sender;

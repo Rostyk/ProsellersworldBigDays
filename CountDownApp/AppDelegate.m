@@ -14,6 +14,8 @@
 #import "Flurry.h"
 //#import "GoogleConversionPing.h"
 
+#import "FacebookFacade.h"
+
 NSLocale *DEVICE_LOCALE;
 NSLocale *ENGLISH_LOCALE;
 
@@ -741,8 +743,7 @@ NSLocale *ENGLISH_LOCALE;
     [rate show];
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     //Tag for rate alert
     if (alertView.tag == 2000) {
@@ -768,17 +769,36 @@ NSLocale *ENGLISH_LOCALE;
     }
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    NSLog(@"application handleOpenURL: %@",url);
+    FBSession *session = [[FacebookFacade sharedInstance] activeSession];
+    if (session) {
+        return [session handleOpenURL:url];
+    }
 
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    return YES;
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation {
+    if (!url) {
+        return NO;
+    }
+    NSLog(@"application handleOpenURL: %@",url);
+
+    BOOL urlHandled = [[FacebookFacade sharedInstance] handleOpenURL:url andSourceApplication:sourceApplication];
+    if(!urlHandled) {
+        urlHandled = [[FacebookFacade sharedInstance] handleOpenURL:url];
+    }
+
+    return YES;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[[FacebookFacade sharedInstance] activeSession] handleDidBecomeActive];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [[FacebookFacade sharedInstance] closeAndClearCache:YES];
 }
 
 @end
