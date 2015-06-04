@@ -134,12 +134,6 @@ static NSString * const kFacebookPermissionsKey = @"ACFacebookPermissionsKey";
                                                 BLOCK_SAFE_RUN(handler, status, error);
 
                                             }];
-
-    //    return [FBSession openActiveSessionWithReadPermissions:readPermissions
-    //                                              allowLoginUI:allowLoginUI
-    //                                         completionHandler:^(FBSession* s, FBSessionState state, NSError *error) {
-    //                                             BLOCK_SAFE_RUN(handler, state, error);
-    //                                         }];
 }
 
 - (void)openSessionWithCompletionHandler:(SimpleBlock)block
