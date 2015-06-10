@@ -11,7 +11,7 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <MessageUI/MFMessageComposeViewController.h>
 
-typedef void (^SimpleBlock)();
+typedef void (^SimpleCallBack)();
 
 @interface BigDaysDetailsViewController : BaseViewController <UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 {
@@ -65,7 +65,7 @@ typedef void (^SimpleBlock)();
 - (IBAction)onShare:(id)sender;
 - (IBAction)onCancelShare:(id)sender;
 - (void)onCancelShare:(id)sender
-      completionBlock:(SimpleBlock)completion;
+      completionBlock:(SimpleCallBack)completion;
 - (IBAction)onInfo:(id)sender;
 - (IBAction)onCancelInfo:(id)sender;
 - (IBAction)onSaveImage:(id)sender;

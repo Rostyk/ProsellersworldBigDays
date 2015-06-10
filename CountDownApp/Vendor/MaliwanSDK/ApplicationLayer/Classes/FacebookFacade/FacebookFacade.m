@@ -141,8 +141,7 @@ static NSString * const kFacebookPermissionsKey = @"ACFacebookPermissionsKey";
     if ([self hasStateCreatedTokenLoaded] && [self isSessionOpen]) {
         BLOCK_SAFE_RUN(block);
     } else {
-        //        if ([[PNAppDelegate sharedApplication] networkIsReachable]) {
-        [self openActiveSessionWithReadPermissions:@[@"publish_actions"]//, @"email", @"user_friends", @"public_profile"]
+        [self openActiveSessionWithReadPermissions:@[@"publish_actions"]
                                       allowLoginUI:YES
                                  completionHandler:
          ^(FBSessionState status, NSError *error){
@@ -167,9 +166,6 @@ static NSString * const kFacebookPermissionsKey = @"ACFacebookPermissionsKey";
                      break;
              }
          }];
-        //        } else {
-        //            [[PNAppDelegate sharedApplication] showNoNetworkError:nil];
-        //        }
     }
 }
 

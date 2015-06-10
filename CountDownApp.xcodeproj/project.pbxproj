@@ -12,6 +12,7 @@
 		037395581B1F022B003931DB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 037395571B1F022B003931DB /* MBProgressHUD.m */; };
 		0373955F1B1F181A003931DB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0373955E1B1F181A003931DB /* Social.framework */; };
 		037395611B1F18D4003931DB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037395601B1F18D4003931DB /* Accounts.framework */; };
+		03E6A5FA1B2855D7009E5697 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E6A5F91B2855D7009E5697 /* AppManager.m */; };
 		09373557188AEB1600424F46 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09373556188AEB1600424F46 /* AdSupport.framework */; };
 		17D0693A1A83725B008DA96F /* libFlurry_6.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D069391A83725B008DA96F /* libFlurry_6.0.0.a */; };
 		31EA95D713434502A677F35E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E21C215D14D03B84F295E /* libPods.a */; };
@@ -755,6 +756,8 @@
 		037395571B1F022B003931DB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0373955E1B1F181A003931DB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		037395601B1F18D4003931DB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		03E6A5F81B2855D7009E5697 /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		03E6A5F91B2855D7009E5697 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 		09373556188AEB1600424F46 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		17D069381A83725B008DA96F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = SOURCE_ROOT; };
 		17D069391A83725B008DA96F /* libFlurry_6.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_6.0.0.a; path = Flurry/libFlurry_6.0.0.a; sourceTree = SOURCE_ROOT; };
@@ -1580,6 +1583,7 @@
 		037395491B1EFDB9003931DB /* MaliwanSDK */ = {
 			isa = PBXGroup;
 			children = (
+				03E6A5E71B284F04009E5697 /* DataAccessLayer */,
 				0373954A1B1EFDB9003931DB /* ApplicationLayer */,
 			);
 			name = MaliwanSDK;
@@ -1618,6 +1622,15 @@
 				037395571B1F022B003931DB /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		03E6A5E71B284F04009E5697 /* DataAccessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				03E6A5F81B2855D7009E5697 /* AppManager.h */,
+				03E6A5F91B2855D7009E5697 /* AppManager.m */,
+			);
+			path = DataAccessLayer;
 			sourceTree = "<group>";
 		};
 		406D411F164DF80100CC59D5 /* RCSwitch */ = {
@@ -3457,6 +3470,7 @@
 				40C711C216416C29006714F1 /* JBTab.m in Sources */,
 				40C711C316416C29006714F1 /* JBTabBar.m in Sources */,
 				40C711C516416C29006714F1 /* JBTabBarController.m in Sources */,
+				03E6A5FA1B2855D7009E5697 /* AppManager.m in Sources */,
 				40C711C616416C29006714F1 /* UINavigationController+JBAdditions.m in Sources */,
 				40C711C716416C29006714F1 /* UITabBarItem+JBAdditions.m in Sources */,
 				037395581B1F022B003931DB /* MBProgressHUD.m in Sources */,
