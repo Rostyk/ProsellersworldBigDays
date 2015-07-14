@@ -103,16 +103,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int nCount = 0;
+    NSUInteger nCount = 0;
     if (self.arrayApps) {
         nCount = self.arrayApps.count;
+        nCount = (nCount >=1) ? nCount - 1 : nCount;
     }
     return nCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = [NSString stringWithFormat:@"Cell_%d_%d", indexPath.section, indexPath.row];
+    NSString *CellIdentifier = [NSString stringWithFormat:@"Cell_%ld_%ld", indexPath.section, indexPath.row];
     
     MoreAppsTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -145,7 +146,7 @@
         }
         else {
             NSDictionary *dicParameter = [NSDictionary dictionaryWithObjectsAndKeys:cell, @"cell",
-                                          [NSString stringWithFormat:@"%d", indexPath.row], @"index", nil];
+                                          [NSString stringWithFormat:@"%ld", (long)indexPath.row], @"index", nil];
             [NSThread detachNewThreadSelector:@selector(setImageToCell:) toTarget:self withObject:dicParameter];
         }
     }

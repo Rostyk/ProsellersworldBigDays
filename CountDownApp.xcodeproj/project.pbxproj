@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -2695,7 +2695,8 @@
 		40C7116C164168E3006714F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastTestingUpgradeCheck = 0640;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Ariel;
 				TargetAttributes = {
 					40C71174164168E3006714F1 = {
@@ -2704,7 +2705,7 @@
 				};
 			};
 			buildConfigurationList = 40C7116F164168E3006714F1 /* Build configuration list for PBXProject "CountDownApp" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
